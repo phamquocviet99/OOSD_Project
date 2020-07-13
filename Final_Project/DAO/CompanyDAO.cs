@@ -44,12 +44,12 @@ namespace Final_Project.DAO
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool DeleteCompany(int id)
-        {
-            string query = string.Format("Delete dbo.Company where IDC = {0}", id);
-            int result = MyDB.Instance.ExecuteNonQuery(query);
-            return result > 0;
-        }
+        //public bool DeleteCompany(int id)
+        //{
+        //    string query = string.Format("Delete dbo.Company where IDC = {0}", id);
+        //    int result = MyDB.Instance.ExecuteNonQuery(query);
+        //    return result > 0;
+        //}
         public bool DeleteCompanyByID(int id)
         {
             string query = string.Format("Delete dbo.Company where IDC = {0}", id);

@@ -46,12 +46,7 @@ namespace Final_Project.DAO
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool DeleteProduct(int id)
-        {
-            string query = string.Format("Delete dbo.Product where IDPro = {0}", id);
-            int result = MyDB.Instance.ExecuteNonQuery(query);
-            return result > 0;
-        }
+        
         public bool DeleteProductByID(int id)
         {
             string query = string.Format("Delete dbo.Product where IDPro = {0}", id);
