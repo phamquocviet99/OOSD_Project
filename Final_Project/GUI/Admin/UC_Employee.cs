@@ -108,12 +108,12 @@ namespace Final_Project.GUI
             int id = Int32.Parse(tbx_id.Text);
             if (EmployeeDAO.Instance.DeleteEmployee(id)) 
             {
-                MessageBox.Show("Thêm thành công nhân viên mới", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa thành công nhân viên mới", "Xóa nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Load();
             }
             else
             {
-                MessageBox.Show("Error", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error", "Xóa", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

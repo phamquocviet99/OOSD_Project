@@ -98,6 +98,18 @@
     <Compile Include="GUI\Admin\UC_Category.Designer.cs">
       <DependentUpon>UC_Category.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Admin\UC_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_Customer.Designer.cs">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_WareHouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\UC_WareHouse.Designer.cs">
+      <DependentUpon>UC_WareHouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Login_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,8 +149,14 @@
     <EmbeddedResource Include="GUI\Admin\UC_Category.resx">
       <DependentUpon>UC_Category.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\UC_Customer.resx">
+      <DependentUpon>UC_Customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\UC_Employee.resx">
       <DependentUpon>UC_Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\UC_WareHouse.resx">
+      <DependentUpon>UC_WareHouse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\User\Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
