@@ -24,7 +24,7 @@ namespace Final_Project
             }
         }
         private MyDB() { }
-        private string connectionSTR = "Data Source=desktop-h7f1594;Initial Catalog=FINALPROJECT;Integrated Security=True";
+        private string connectionSTR = "Data Source=DESKTOP-CG6GB2G;Initial Catalog=FINALPROJECT;Integrated Security=True";
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();
