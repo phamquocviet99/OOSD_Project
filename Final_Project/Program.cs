@@ -18,7 +18,7 @@ namespace Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_Form());
+            Application.Run(new Login_Form());
         }
     }
 }
