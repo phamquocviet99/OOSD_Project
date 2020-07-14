@@ -81,5 +81,21 @@ namespace Final_Project.GUI
             uc.Dock = DockStyle.Fill;
             PanAdmin.Controls.Add(uc);
         }
+
+        private void btn_Product_Click(object sender, EventArgs e)
+        {
+            PanAdmin.Controls.Clear();
+            UC_Product uc = new UC_Product();
+            uc.Dock = DockStyle.Fill;
+            PanAdmin.Controls.Add(uc);
+        }
+
+        private void btn_Company_Click(object sender, EventArgs e)
+        {
+            PanAdmin.Controls.Clear();
+            UC_Company uc = new UC_Company();
+            uc.Dock = DockStyle.Fill;
+            PanAdmin.Controls.Add(uc);
+        }
     }
 }

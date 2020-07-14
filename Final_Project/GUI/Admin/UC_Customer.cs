@@ -21,7 +21,7 @@ namespace Final_Project.GUI.Admin
             Load();
         }
         BindingSource listcustomer = new BindingSource();
-        void Load()
+         new void Load()
         {
             LoadListCustomer();
             dtgvCustomer.RowTemplate.Height = 25;
@@ -91,12 +91,12 @@ namespace Final_Project.GUI.Admin
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Sửa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Sửa khách hàng thất bại", "Sửa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Edit customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Thông tin bị trống", "Sửa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -127,12 +127,12 @@ namespace Final_Project.GUI.Admin
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm khách hàng thất bại", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Add Customer", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Thông tin bị trống", "Thêm khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -146,7 +146,7 @@ namespace Final_Project.GUI.Admin
             }
             else
             {
-                MessageBox.Show("Error", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xóa khách hàng thất bại", "Xóa khách hàng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

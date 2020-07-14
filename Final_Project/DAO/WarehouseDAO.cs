@@ -19,7 +19,7 @@ namespace Final_Project.DAO
             private set { WarehouseDAO.instance = value; }
         }
         private WarehouseDAO() { }
-        public bool InsertWarehouse(string id_pro, string address,string quantity)
+        public bool InsertWarehouse(int id_pro, string address,int quantity)
         {
 
             string query = string.Format("INSERT dbo.Warehouse(IDPRO,AddressWa,Quantity)VALUES ( N'{0}', N'{1}',N'{2}')",id_pro, address,quantity);
@@ -45,9 +45,9 @@ namespace Final_Project.DAO
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public bool UpdateWarehouse(string idwa,string id_pro, string address,string quantity)
+        public bool UpdateWarehouse(int idwa,int id_pro, string address,int quantity)
         {
-            string query = string.Format("UPDATE dbo.Warehouse SET Idpro=N'{1}', Address = N'{2}',Quantity = N'{3}' WHERE idwa = {0}",idwa, id_pro,address,quantity);
+            string query = string.Format("UPDATE dbo.Warehouse SET Idpro={1}, AddressWa = N'{2}',Quantity = {3} WHERE idwa = {0}",idwa, id_pro,address,quantity);
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }

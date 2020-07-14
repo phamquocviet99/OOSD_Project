@@ -9,7 +9,7 @@ namespace Final_Project.DTO
 {
     class Warehouse
     {
-        public Warehouse(int id,int idpro,string address,string quantity)
+        public Warehouse(int id,int idpro,string address,int quantity)
         {
             this.Id = id;
             this.Idpro = idpro;
@@ -21,17 +21,17 @@ namespace Final_Project.DTO
             this.Id = (int)row["IDWa"];
             this.Idpro = (int)row["IDPro"];
             this.Address = row["AddressWa"].ToString();
-            this.Quantity = row["Quantity"].ToString();
+            this.Quantity = (int)row["Quantity"];
         }
 
         private int id;
         private int idpro;
         private string address;
-        private string quantity;
+        private int quantity;
 
         public int Id { get => id; set => id = value; }
         public int Idpro { get => idpro; set => idpro = value; }
         public string Address { get => address; set => address = value; }
-        public string Quantity { get => quantity; set => quantity = value; }
+        public  int Quantity { get => quantity; set => quantity = value; }
     }
 }

@@ -21,7 +21,7 @@ namespace Final_Project.DTO
             this.Id = (int)row["IDC"];
             this.Name = row["NameC"].ToString();
             this.Address = row["AddressC"].ToString();
-            this.Phone = row["Phone"].ToString();      
+            this.Phone = row["PhoneC"].ToString();      
         }
         private int id;
         private string name;

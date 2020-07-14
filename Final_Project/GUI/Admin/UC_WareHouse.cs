@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
@@ -11,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Final_Project.GUI.Admin;
 using Final_Project.DAO;
+using Final_Project.DTO;
+
 using System.Globalization;
 
 namespace Final_Project.GUI.Admin
@@ -21,23 +22,30 @@ namespace Final_Project.GUI.Admin
         public UC_WareHouse()
         {
             InitializeComponent();
-        }
-        BindingSource listwarehouse= new BindingSource();
-
-        void Load()
-        {
             Load();
+        }
+        //BindingSource listwarehouse= new BindingSource();
+
+        new void Load()
+        {
+            LoadListWarehouse();
             dtgvWarehouse.RowTemplate.Height = 25;
-            dtgvWarehouse.DataSource = listwarehouse;
+            LoadCombox(cb_pro);
         }
         void LoadListWarehouse()
         {
-            listwarehouse.DataSource = WarehouseDAO.Instance.GetListWarehouse();
+            dtgvWarehouse.DataSource = WarehouseDAO.Instance.GetListWarehouse();
+        }
+        void LoadCombox(ComboBox cb)
+        {
+            cb.DataSource = ProductDAO.Instance.GetListProduct();
+            cb.DisplayMember = "Name";
         }
         bool verif()
         {
             if ((txb_Address.Text.Trim() == "")
-                        || (txb_Quantity.Text.Trim() == "")
+                        || (txb_Quantity.Text.Trim() == ""
+                        )
                         
                         )
             {
@@ -53,7 +61,7 @@ namespace Final_Project.GUI.Admin
         private void dtgvWarehouse_Click(object sender, EventArgs e)
         {
             tbx_id.Text = dtgvWarehouse.CurrentRow.Cells[0].Value.ToString();
-            tbx_idpro.Text = dtgvWarehouse.CurrentRow.Cells[1].Value.ToString();
+            cb_pro.Text = dtgvWarehouse.CurrentRow.Cells[1].Value.ToString();
             txb_Address.Text = dtgvWarehouse.CurrentRow.Cells[2].Value.ToString();
             txb_Quantity.Text = dtgvWarehouse.CurrentRow.Cells[3].Value.ToString();
             //txb_Phone.Text = dtgvCustomer.CurrentRow.Cells[6].Value.ToString();
@@ -63,7 +71,7 @@ namespace Final_Project.GUI.Admin
         private void btn_Clear_Click(object sender, EventArgs e)
         {
             tbx_id.Text = "";
-            tbx_idpro.Text = "";
+            cb_pro.Text = "";
             txb_Address.Text = "";
             txb_Quantity.Text = "";
         }
@@ -71,9 +79,8 @@ namespace Final_Project.GUI.Admin
         private void btn_AddWarehouse_Click(object sender, EventArgs e)
         {
             string address= txb_Address.Text;
-            string quantity =txb_Quantity.Text;
-            string id_pro = tbx_idpro.Text;
-            tbx_idpro.Text = "1";
+            int quantity = Convert.ToInt32(txb_Quantity.Text);
+            int id_pro = (cb_pro.SelectedItem as Product).Id;
             if (verif())
             {
                 if (WarehouseDAO.Instance.InsertWarehouse(id_pro, address,quantity))
@@ -83,44 +90,51 @@ namespace Final_Project.GUI.Admin
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Thêm kho", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm kho thất bại", "Thêm kho", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Add Warehouse", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Thông tin bị trống", "Thêm kho", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
         private void btn_EditWarehouse_Click(object sender, EventArgs e)
         {
-            string idwa = tbx_id.Text;
-            string id_pro = tbx_idpro.Text;
-            string address = txb_Address.Text;
-            string quantity = txb_Quantity.Text;
+            
            
-
-            if (verif())
+            if (tbx_id.Text == "")
             {
-                if (WarehouseDAO.Instance.UpdateWarehouse(idwa,id_pro, address, quantity))
-                {
-                    MessageBox.Show("Sửa kho thành công", "Sửa kho", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Load();
-                }
-                else
-                {
-                    MessageBox.Show("Sửa kho không thành công", "Sửa kho", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Chọn thông báo cần sửa");
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Edit Warehouse", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                int idwa = Convert.ToInt32(tbx_id.Text);
+                int id_pro = (cb_pro.SelectedItem as Product).Id;
+                string address = txb_Address.Text;
+                int quantity = Convert.ToInt32(txb_Quantity.Text);
+                if (verif())
+                {
+                    if (WarehouseDAO.Instance.UpdateWarehouse(idwa, id_pro, address, quantity))
+                    {
+                        MessageBox.Show("Sửa kho thành công", "Sửa kho", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Load();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sửa kho không thành công", "Sửa kho", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Thông tin bị trống ", "Sửa nhà kho", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
             }
         }
 
         private void btn_RemoveWarehouse_Click(object sender, EventArgs e)
         {
-            int id = Int32.Parse(tbx_id.Text);
+            int id = Convert.ToInt32(tbx_id.Text);
             if (WarehouseDAO.Instance.DeleteWarehouse(id))
             {
                 MessageBox.Show("Xóa kho thành công", "Xóa kho  ", MessageBoxButtons.OK, MessageBoxIcon.Information);

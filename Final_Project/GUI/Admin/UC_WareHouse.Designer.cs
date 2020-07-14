@@ -30,6 +30,7 @@
         {
             this.dtgvWarehouse = new System.Windows.Forms.DataGridView();
             this.PanEmployee = new System.Windows.Forms.Panel();
+            this.cb_pro = new System.Windows.Forms.ComboBox();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.tbx_id = new System.Windows.Forms.TextBox();
             this.txb_Quantity = new System.Windows.Forms.TextBox();
@@ -39,7 +40,6 @@
             this.txb_Address = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbx_idpro = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvWarehouse)).BeginInit();
             this.PanEmployee.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +58,7 @@
             // 
             // PanEmployee
             // 
-            this.PanEmployee.Controls.Add(this.tbx_idpro);
+            this.PanEmployee.Controls.Add(this.cb_pro);
             this.PanEmployee.Controls.Add(this.btn_Clear);
             this.PanEmployee.Controls.Add(this.tbx_id);
             this.PanEmployee.Controls.Add(this.txb_Quantity);
@@ -73,6 +73,15 @@
             this.PanEmployee.Name = "PanEmployee";
             this.PanEmployee.Size = new System.Drawing.Size(450, 334);
             this.PanEmployee.TabIndex = 9;
+            // 
+            // cb_pro
+            // 
+            this.cb_pro.FormattingEnabled = true;
+            this.cb_pro.Location = new System.Drawing.Point(155, 60);
+            this.cb_pro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb_pro.Name = "cb_pro";
+            this.cb_pro.Size = new System.Drawing.Size(181, 24);
+            this.cb_pro.TabIndex = 37;
             // 
             // btn_Clear
             // 
@@ -90,6 +99,7 @@
             this.tbx_id.Location = new System.Drawing.Point(155, 25);
             this.tbx_id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbx_id.Name = "tbx_id";
+            this.tbx_id.ReadOnly = true;
             this.tbx_id.Size = new System.Drawing.Size(178, 22);
             this.tbx_id.TabIndex = 35;
             // 
@@ -160,14 +170,6 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Địa chỉ ";
             // 
-            // tbx_idpro
-            // 
-            this.tbx_idpro.Location = new System.Drawing.Point(155, 61);
-            this.tbx_idpro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbx_idpro.Name = "tbx_idpro";
-            this.tbx_idpro.Size = new System.Drawing.Size(178, 22);
-            this.tbx_idpro.TabIndex = 37;
-            // 
             // UC_WareHouse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -196,6 +198,6 @@
         private System.Windows.Forms.TextBox txb_Address;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tbx_idpro;
+        private System.Windows.Forms.ComboBox cb_pro;
     }
 }
