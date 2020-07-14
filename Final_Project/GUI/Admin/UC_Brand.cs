@@ -76,8 +76,8 @@ namespace Final_Project.GUI.Admin
             string name = txb_namebrand.Text;
             int idcate = (cb_cate.SelectedItem as Category).Id;
             if (BrandDAO.Instance.UpdateBrand(name,id,des,idcate))
-            { MessageBox.Show("Thêm thành công !"); }
-            else { MessageBox.Show("Thêm thất bại !"); }
+            { MessageBox.Show("Sửa thành công !"); }
+            else { MessageBox.Show("Sửa thất bại !"); }
             LoadlistBrand();
         }
     }

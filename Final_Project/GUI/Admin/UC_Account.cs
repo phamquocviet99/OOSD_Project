@@ -76,7 +76,7 @@ namespace Final_Project.GUI.Admin
             }
             else
             {
-                MessageBox.Show("Error", "Thêm tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Thêm tài khoản thất bại", "Thêm tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -91,12 +91,12 @@ namespace Final_Project.GUI.Admin
             int id = Convert.ToInt32(txb_idem.Text);
             if (AccountDAO.Instance.RemoveAccount(id))
             {
-                MessageBox.Show("Thêm thành tài khoản mới", "Thêm tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa thành công tài khoản mới", "Xóa tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loadlistaccount();
             }
             else
             {
-                MessageBox.Show("Error", "Thêm tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xóa tài khoản thất bại", "Xóa tài khoản", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

@@ -31,20 +31,24 @@ D:\viet\visual\Final_Project\Final_Project\bin\Debug\Final_Project.exe.config
 D:\viet\visual\Final_Project\Final_Project\bin\Debug\Final_Project.exe
 D:\viet\visual\Final_Project\Final_Project\bin\Debug\Final_Project.pdb
 D:\viet\visual\Final_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Brand.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe.config
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\bin\Debug\Final_Project.pdb
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.csprojAssemblyReference.cache
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin_Form.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount_Form.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Account.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Brand.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Category.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.UC_Employee.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.User.Login_Form.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.cache
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.CoreCompileInputs.cache
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.exe
-E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.pdb
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe.config
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\bin\Debug\Final_Project.pdb
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin_Form.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount_Form.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Account.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Brand.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Category.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Customer.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.UC_Employee.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.User.Login_Form.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.cache
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.CoreCompileInputs.cache
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.exe
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.pdb
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_WareHouse.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Product.resources
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.csprojAssemblyReference.cache
+E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Company.resources
