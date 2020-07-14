@@ -44,9 +44,10 @@
             this.tbpassword.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbpassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tbpassword.Location = new System.Drawing.Point(14, 280);
+            this.tbpassword.Location = new System.Drawing.Point(12, 224);
+            this.tbpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpassword.Name = "tbpassword";
-            this.tbpassword.Size = new System.Drawing.Size(349, 28);
+            this.tbpassword.Size = new System.Drawing.Size(310, 23);
             this.tbpassword.TabIndex = 5;
             // 
             // tbusername
@@ -54,9 +55,10 @@
             this.tbusername.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.tbusername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tbusername.Location = new System.Drawing.Point(14, 198);
+            this.tbusername.Location = new System.Drawing.Point(12, 158);
+            this.tbusername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(349, 28);
+            this.tbusername.Size = new System.Drawing.Size(310, 23);
             this.tbusername.TabIndex = 4;
             // 
             // btncancel
@@ -66,9 +68,10 @@
             this.btncancel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.btncancel.ForeColor = System.Drawing.Color.White;
             this.btncancel.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.btncancel.Location = new System.Drawing.Point(12, 411);
+            this.btncancel.Location = new System.Drawing.Point(11, 329);
+            this.btncancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(349, 57);
+            this.btncancel.Size = new System.Drawing.Size(310, 46);
             this.btncancel.TabIndex = 2;
             this.btncancel.Text = "Thoát";
             this.btncancel.UseVisualStyleBackColor = false;
@@ -79,9 +82,10 @@
             this.btnlogin.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
             this.btnlogin.ForeColor = System.Drawing.Color.White;
             this.btnlogin.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.btnlogin.Location = new System.Drawing.Point(12, 338);
+            this.btnlogin.Location = new System.Drawing.Point(11, 270);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(349, 58);
+            this.btnlogin.Size = new System.Drawing.Size(310, 46);
             this.btnlogin.TabIndex = 1;
             this.btnlogin.Text = "Đăng nhập";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -96,9 +100,10 @@
             this.panel1.Controls.Add(this.tbusername);
             this.panel1.Controls.Add(this.btncancel);
             this.panel1.Controls.Add(this.btnlogin);
-            this.panel1.Location = new System.Drawing.Point(3, 4);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(368, 479);
+            this.panel1.Size = new System.Drawing.Size(327, 383);
             this.panel1.TabIndex = 3;
             // 
             // label2
@@ -106,9 +111,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.label2.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.label2.Location = new System.Drawing.Point(20, 241);
+            this.label2.Location = new System.Drawing.Point(18, 193);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 11;
             this.label2.Text = "PASSWORD";
             // 
@@ -117,9 +122,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.label1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.label1.Location = new System.Drawing.Point(20, 164);
+            this.label1.Location = new System.Drawing.Point(18, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 20);
+            this.label1.Size = new System.Drawing.Size(93, 17);
             this.label1.TabIndex = 10;
             this.label1.Text = "USERNAME";
             // 
@@ -129,18 +134,19 @@
             this.label3.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 24F);
             this.label3.ForeColor = System.Drawing.Color.LightBlue;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.label3.Location = new System.Drawing.Point(72, 43);
+            this.label3.Location = new System.Drawing.Point(64, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 69);
+            this.label3.Size = new System.Drawing.Size(178, 56);
             this.label3.TabIndex = 9;
-            this.label3.Text = "LOGIN";
+            this.label3.Text = "Cuong";
             // 
             // Login_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 486);
+            this.ClientSize = new System.Drawing.Size(332, 389);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Login_Form";
             this.Text = "Login_Form";
             this.panel1.ResumeLayout(false);
