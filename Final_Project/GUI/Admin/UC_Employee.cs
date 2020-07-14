@@ -37,11 +37,11 @@ namespace Final_Project.GUI
             string fname = txb_FName.Text;
             string lname = txb_LName.Text;
             DateTime birthday = dtpk_Birth.Value;
-            string gender = "Male";
+            string gender = "Nam";
             rb_Female.Checked = true;
             if (rb_Female.Checked)
             {
-                gender = "Female";
+                gender = "Nữ";
             }
             string phone = txb_Phone.Text;
             string address = txb_Address.Text;
@@ -49,7 +49,7 @@ namespace Final_Project.GUI
             int this_year = DateTime.Now.Year;
             if (((this_year - born_year) < 10) || ((this_year - born_year) > 100))
             {
-                MessageBox.Show("The Student Age Must Be Between 10 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tuổi nhân viên phải trong từ 10 đến 100", "Độ tuổi không phù hợp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (verif())
             {
@@ -60,12 +60,12 @@ namespace Final_Project.GUI
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm nhân viên thất bại", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Thông tin bị trống", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
         }
@@ -108,12 +108,12 @@ namespace Final_Project.GUI
             int id = Int32.Parse(tbx_id.Text);
             if (EmployeeDAO.Instance.DeleteEmployee(id)) 
             {
-                MessageBox.Show("Thêm thành công nhân viên mới", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Xóa thành công nhân viên mới", "Xóa nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Load();
             }
             else
             {
-                MessageBox.Show("Error", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Xóa nhân viên thất bại", "Xóa", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -126,17 +126,17 @@ namespace Final_Project.GUI
             string gender = "";
             if (rb_Female.Checked == true)
             {
-                gender = "Female";
+                gender = "Nữ";
             }
             else
-            { gender = "Male"; }
+            { gender = "Nam"; }
             string phone = txb_Phone.Text;
             string address = txb_Address.Text;
             int born_year = dtpk_Birth.Value.Year;
             int this_year = DateTime.Now.Year;
             if (((this_year - born_year) < 10) || ((this_year - born_year) > 100))
             {
-                MessageBox.Show("The Student Age Must Be Between 10 and 100 year", "Invalid Birth Date", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Tuổi nhân viên phải trong từ 10 đến 100", "Độ tuổi không phù hợp", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (verif())
             {
@@ -147,12 +147,12 @@ namespace Final_Project.GUI
                 }
                 else
                 {
-                    MessageBox.Show("Error", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thêm nhân viên thất bại", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Emty Fields", "Add Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Thông tin bị trống ", "Thêm nhân viên", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 

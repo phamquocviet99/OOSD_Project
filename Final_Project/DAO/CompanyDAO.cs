@@ -33,14 +33,14 @@ namespace Final_Project.DAO
         public bool InsertCompany(string name, string address, string phone)
         {
 
-            string query = string.Format("INSERT dbo.Company ( namecom , address, phone)VALUES  ( N'{0}', N'{1}', N'{2}')", name, address, phone);
+            string query = string.Format("INSERT dbo.Company ( NameC , addressC, phoneC)VALUES  ( N'{0}', N'{1}', N'{2}')", name, address, phone);
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 
         public bool UpdateCompany(string name, int id, string address, string phone)
         {
-            string query = string.Format("UPDATE dbo.Company SET namecom = N'{0}', address = N'{2}', phone = N'{3}' WHERE idcate = {1}", name, id, address, phone);
+            string query = string.Format("UPDATE dbo.Company SET namec = N'{0}', addressc = N'{2}', phonec = N'{3}' WHERE idc = {1}", name, id, address, phone);
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
@@ -56,17 +56,11 @@ namespace Final_Project.DAO
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public Company GetCompanyByID(int id)
+        public int execCount(string query)
         {
-            Company company = null;
-            string query = "SELECT*FROM Company where IDC=" + id;
-            DataTable data = MyDB.Instance.ExcuteQuery(query);
-            foreach (DataRow item in data.Rows)
-            {
-                company = new Company(item);
-                return company;
-            }
-            return company;
+            int count = MyDB.Instance.ExecuteNonQuery(query);
+            return count;
         }
+
     }
 }
