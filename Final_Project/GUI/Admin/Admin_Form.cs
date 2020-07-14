@@ -50,14 +50,6 @@ namespace Final_Project.GUI
             PanAdmin.Controls.Add(uc);
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            PanAdmin.Controls.Clear();
-            UC_Account uc = new UC_Account();
-            uc.Dock = DockStyle.Fill;
-            PanAdmin.Controls.Add(uc);
-        }
-
         private void btn_brand_Click(object sender, EventArgs e)
         {
             PanAdmin.Controls.Clear();
@@ -96,6 +88,31 @@ namespace Final_Project.GUI
             UC_Company uc = new UC_Company();
             uc.Dock = DockStyle.Fill;
             PanAdmin.Controls.Add(uc);
+        }
+
+        private void Admin_Form_Load(object sender, EventArgs e)
+        {
+            btn_Em.FlatAppearance.BorderSize = 0;
+            btn_Product.FlatAppearance.BorderSize = 0;
+            btn_Warehouse.FlatAppearance.BorderSize = 0;
+            btn_Customer.FlatAppearance.BorderSize = 0;
+            btn_Company.FlatAppearance.BorderSize = 0;
+            btn_brand.FlatAppearance.BorderSize = 0;
+          
+            btn_Em.FlatAppearance.BorderSize = 0;
+        }
+
+        private void btn_Account_Click(object sender, EventArgs e)
+        {
+            PanAdmin.Controls.Clear();
+            UC_Account uc = new UC_Account();
+            uc.Dock = DockStyle.Fill;
+            PanAdmin.Controls.Add(uc);
+        }
+
+        private void pic_close_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
