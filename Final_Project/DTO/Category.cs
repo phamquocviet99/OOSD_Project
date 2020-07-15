@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Final_Project.DTO
 {
-    class Category
+    public class Category
     {
         public Category(int id, string name,string des)
         {

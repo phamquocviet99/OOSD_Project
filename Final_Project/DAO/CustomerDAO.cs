@@ -56,5 +56,22 @@ namespace Final_Project.DAO
             int count = MyDB.Instance.ExecuteNonQuery(query);
             return count;
         }
+        public List<Customer> SearchCustomerbyphone(string phone)
+        {
+            List<Customer> list = new List<Customer>();
+
+            string query = string.Format("SELECT * FROM dbo.Customer WHERE dbo.fuConvertToUnsign1(namepro) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", phone);
+
+            DataTable data = MyDB.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Customer cus = new Customer(item);
+                list.Add(cus);
+            }
+
+            return list;
+        }
+        
     }
 }

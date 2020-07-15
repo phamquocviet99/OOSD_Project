@@ -55,17 +55,23 @@ namespace Final_Project.DAO
             int result = MyDB.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
-        public Category GetCategoryByID(int id)
+        public List<Brand> GetBrandByCategoryID(int id)
         {
-            Category category = null;
-            string query = "SELECT*FROM CATEGORY where idcate=" + id;
+            List<Brand> list = new List<Brand>();
+
+            string query = "select * from Brand where IDCATE= " + id;
+
             DataTable data = MyDB.Instance.ExcuteQuery(query);
+
             foreach (DataRow item in data.Rows)
             {
-                category = new Category(item);
-                return category;
+                Brand brand = new Brand(item);
+                list.Add(brand);
             }
-            return category;
+
+            return list;
         }
+
+
     }
 }
