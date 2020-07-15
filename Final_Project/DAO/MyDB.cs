@@ -25,7 +25,7 @@ namespace Final_Project
             }
         }
         private MyDB() { }
-        private string connectionSTR = "Data Source=DESKTOP-GI07FQB;Initial Catalog=FINALPROJECT_FirstCreate;Integrated Security=True";
+        private string connectionSTR = "Data Source=desktop-h7f1594;Initial Catalog=FINALPROJECT;Integrated Security=True";
         //private string connectionSTR = "Data Source=(LocalDb)\\MSSQLLocalDB;Initial Catalog=FINALPROJECT;Integrated Security=True";
         public DataTable ExcuteQuery(string query, object[] parameter = null)
         {

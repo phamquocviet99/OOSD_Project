@@ -166,7 +166,7 @@ namespace Final_Project.GUI
         {
             CreateAccount_Form create = new CreateAccount_Form();
             create.Show(this);
-            //create.id = Convert.ToInt32(tbx_id.Text);
+            create.id = Convert.ToInt32(tbx_id.Text);
         }
 
         

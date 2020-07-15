@@ -52,3 +52,24 @@ E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debu
 E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Product.resources
 E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.csprojAssemblyReference.cache
 E:\TAI LIEU\2019-2020\HK2\GsLite\Github_OOSD\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Company.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe.config
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\bin\Debug\Final_Project.exe
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\bin\Debug\Final_Project.pdb
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.csprojAssemblyReference.cache
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin_Form.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.CreateAccount_Form.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Account.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Brand.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Category.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Company.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Customer.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.UC_Employee.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_Product.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.UC_WareHouse.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.User.Login_Form.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.Properties.Resources.resources
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.GenerateResource.cache
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.csproj.CoreCompileInputs.cache
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.exe
+C:\Users\phamq\Desktop\finla\OOSD_Project\Final_Project\obj\Debug\Final_Project.pdb
