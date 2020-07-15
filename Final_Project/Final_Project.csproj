@@ -82,6 +82,12 @@
     <Compile Include="GUI\Admin\CreateAccount_Form.Designer.cs">
       <DependentUpon>CreateAccount_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Admin\Saler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\Saler.Designer.cs">
+      <DependentUpon>Saler.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Admin\UC_Account.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -154,6 +160,9 @@
     <EmbeddedResource Include="GUI\Admin\CreateAccount_Form.resx">
       <DependentUpon>CreateAccount_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\Saler.resx">
+      <DependentUpon>Saler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\UC_Account.resx">
       <DependentUpon>UC_Account.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +227,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="search--v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="945px-Vector_search_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Remove-item-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Final_Project.GUI;
+using Final_Project.GUI.Admin;
 using Final_Project.GUI.User;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Admin_Form());
+            Application.Run(new Saler());
         }
     }
 }
