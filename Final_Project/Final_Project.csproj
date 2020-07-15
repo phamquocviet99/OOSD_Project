@@ -130,12 +130,6 @@
     <Compile Include="GUI\Admin\UC_WareHouse.Designer.cs">
       <DependentUpon>UC_WareHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Login_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Login_Form.Designer.cs">
-      <DependentUpon>Login_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\MyDB.cs" />
     <Compile Include="GUI\Admin\UC_Employee.cs">
       <SubType>UserControl</SubType>
