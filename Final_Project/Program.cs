@@ -19,7 +19,7 @@ namespace Final_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Saler());
+            Application.Run(new Login_Form());
         }
     }
 }

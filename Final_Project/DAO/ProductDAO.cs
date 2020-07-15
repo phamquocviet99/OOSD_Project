@@ -54,6 +54,37 @@ namespace Final_Project.DAO
             int count = MyDB.Instance.ExecuteNonQuery(query);
             return count;
         }
+        public List<Product> SearchProductname(string name)
+        {
+            List<Product> list = new List<Product>();
 
+            string query = string.Format("SELECT * FROM dbo.Product WHERE dbo.fuConvertToUnsign1(namepro) LIKE N'%' + dbo.fuConvertToUnsign1(N'{0}') + '%'", name);
+
+            DataTable data = MyDB.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Product product = new Product(item);
+                list.Add(product);
+            }
+
+            return list;
+        }
+        public List<Product> GetProductByBrandID(int id)
+        {
+            List<Product> list = new List<Product>();
+
+            string query = "select * from Product where IDbr= " + id;
+
+            DataTable data = MyDB.Instance.ExcuteQuery(query);
+
+            foreach (DataRow item in data.Rows)
+            {
+                Product product = new Product(item);
+                list.Add(product);
+            }
+
+            return list;
+        }
     }
 }

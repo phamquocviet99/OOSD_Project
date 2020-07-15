@@ -82,6 +82,12 @@
     <Compile Include="GUI\Admin\CreateAccount_Form.Designer.cs">
       <DependentUpon>CreateAccount_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Admin\Create_Cus_for_Saler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Admin\Create_Cus_for_Saler.Designer.cs">
+      <DependentUpon>Create_Cus_for_Saler.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\Admin\Saler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +136,6 @@
     <Compile Include="GUI\Admin\UC_WareHouse.Designer.cs">
       <DependentUpon>UC_WareHouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Login_Form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\Login_Form.Designer.cs">
-      <DependentUpon>Login_Form.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\MyDB.cs" />
     <Compile Include="GUI\Admin\UC_Employee.cs">
       <SubType>UserControl</SubType>
@@ -159,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\CreateAccount_Form.resx">
       <DependentUpon>CreateAccount_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Admin\Create_Cus_for_Saler.resx">
+      <DependentUpon>Create_Cus_for_Saler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\Admin\Saler.resx">
       <DependentUpon>Saler.cs</DependentUpon>
