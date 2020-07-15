@@ -73,6 +73,16 @@ namespace Final_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1200px_User_font_awesome_svg {
+            get {
+                object obj = ResourceManager.GetObject("1200px-User_font_awesome.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _945px_Vector_search_icon_svg {
             get {
                 object obj = ResourceManager.GetObject("945px-Vector_search_icon.svg", resourceCulture);

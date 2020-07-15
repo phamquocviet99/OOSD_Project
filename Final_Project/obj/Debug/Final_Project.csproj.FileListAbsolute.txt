@@ -74,3 +74,4 @@ E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.cspr
 E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.exe
 E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.pdb
 E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.Admin.Saler.resources
+E:\tkpmhdt\Final_Project\OOSD_Project\Final_Project\obj\Debug\Final_Project.GUI.User.Profile.resources
